@@ -114,6 +114,18 @@
     .section-content a:hover {
       text-decoration: underline;
     }
+
+    .section-list {
+      margin: 12px 0 0;
+      padding-left: 22px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--body-color);
+    }
+
+    .section-list li {
+      margin-bottom: 8px;
+    }
   </style>
 </head>
 <body>
@@ -125,7 +137,7 @@
       </svg>
       <h1 class="header-title">Privacy Policy</h1>
       <div class="header-divider"></div>
-      <p class="section-content" style="margin-top:16px;">Last updated: August 10, 2026</p>
+      <p class="section-content" style="margin-top:16px;">Last updated: September 29, 2026</p>
     </div>
 
     <div class="section">
@@ -184,7 +196,14 @@
       </div>
       <div class="section-body">
         <h2 class="section-title">Permissions and Local Data</h2>
-        <p class="section-content">The App requests only the permissions necessary to function properly, such as internet access to display web content. Standard web technologies such as cookies and cache may be stored locally on your device to improve browsing performance. All such data remains on your device and can be cleared at any time using the "Clear History" feature within the App.</p>
+        <p class="section-content">The App requests only the permissions its features need:</p>
+        <ul class="section-list">
+          <li>Internet and network state &mdash; to load your router&rsquo;s admin page and show connection details.</li>
+          <li>Wi-Fi information &mdash; to display the connected network&rsquo;s name, band and channel. On Android 8&ndash;12, Android itself requires Location permission to expose the Wi-Fi name; on Android 13+ the Nearby devices permission is used instead. Your physical location is never determined, stored, or shared.</li>
+          <li>Notifications (Android 13+) &mdash; to report download progress and results only.</li>
+          <li>Storage (Android 9 and below) &mdash; to save files you download from your router.</li>
+        </ul>
+        <p class="section-content">Files you choose to download from your router (configuration backups, firmware, logs) are saved to your device&rsquo;s Downloads folder and never leave your device. Standard web technologies such as cookies and cache may be stored locally on your device to keep you signed in and improve browsing performance. All such data remains on your device and can be cleared at any time using the "Clear History" feature within the App.</p>
       </div>
     </div>
 
