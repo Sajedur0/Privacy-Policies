@@ -137,7 +137,7 @@
       </svg>
       <h1 class="header-title">Privacy Policy</h1>
       <div class="header-divider"></div>
-      <p class="section-content" style="margin-top:16px;">Last updated: September 29, 2026</p>
+      <p class="section-content" style="margin-top:16px;">Last updated: October 1, 2026</p>
     </div>
 
     <div class="section">
@@ -149,7 +149,7 @@
       </div>
       <div class="section-body">
         <h2 class="section-title">Introduction</h2>
-        <p class="section-content">This Privacy Policy describes how the "Router Page Setup" application (hereinafter "the App") collects, uses, and protects information when you use our services. We are committed to safeguarding your privacy. By downloading and using the App, you agree to the practices described in this policy.</p>
+        <p class="section-content">This Privacy Policy explains what &ldquo;Router Page Setup&rdquo; (&ldquo;the App&rdquo;) does with your information. The App has no account system and no developer-operated servers: it connects only to your own router, and to the websites you choose to open from it. By installing or using the App you agree to the practices described below.</p>
       </div>
     </div>
 
@@ -163,22 +163,28 @@
       </div>
       <div class="section-body">
         <h2 class="section-title">Information We Collect</h2>
-        <p class="section-content">The App does not collect, store, or share any personal information. We do not collect names, email addresses, phone numbers, device identifiers, or any other personally identifiable information. The App is designed to provide users with quick access to web-based admin panels through an embedded browser interface.</p>
+        <p class="section-content">We collect no personal or sensitive user data. Nothing you do in the App &mdash; the pages you open, the Wi-Fi networks you join, the files you download from your router &mdash; is ever transmitted to us. We have no way to see your name, email address, phone number, contacts, photos, advertising ID, or any other identifier, because we never receive them.</p>
+        <p class="section-content" style="margin-top:12px;">The App has no sign-up and no login, so there is no account for us to link any information to, and no developer-operated server that could receive it.</p>
       </div>
     </div>
 
     <div class="section">
       <div class="section-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
-          <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/>
-          <path d="M1 1l22 22"/>
-          <path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"/>
+          <rect x="3" y="4" width="18" height="6" rx="2"/>
+          <rect x="3" y="14" width="18" height="6" rx="2"/>
+          <path d="M7 7h.01M7 17h.01"/>
         </svg>
       </div>
       <div class="section-body">
-        <h2 class="section-title">No Tracking or Analytics</h2>
-        <p class="section-content">We do not track your activity, collect analytics, or use any third-party tracking services. The App does not use advertising SDKs, analytics SDKs, or any form of behavior-based advertising.</p>
+        <h2 class="section-title">Information Kept Only On Your Device</h2>
+        <p class="section-content">Some data is written to the App&rsquo;s private storage on your device, and never leaves it:</p>
+        <ul class="section-list">
+          <li>Settings &mdash; your theme, your desktop or mobile view choice, and your list of Ping Test servers.</li>
+          <li>Browser data &mdash; cookies, cached pages, saved router login details, and page history for the router pages you open. Third-party cookies are blocked.</li>
+          <li>Download records &mdash; the names of files you have downloaded from your router.</li>
+        </ul>
+        <p class="section-content">You can erase all of it at any time without uninstalling: use &ldquo;Clear History&rdquo; in the App menu to remove cookies, cached pages, the saved router login and page history, or clear the App&rsquo;s data from Android Settings, or uninstall the App. The App&rsquo;s data is excluded from Android cloud backup, so it is never uploaded to your Google account.</p>
       </div>
     </div>
 
@@ -195,15 +201,48 @@
         </svg>
       </div>
       <div class="section-body">
-        <h2 class="section-title">Permissions and Local Data</h2>
+        <h2 class="section-title">Permissions, and Why We Need Them</h2>
         <p class="section-content">The App requests only the permissions its features need:</p>
         <ul class="section-list">
-          <li>Internet and network state &mdash; to load your router&rsquo;s admin page and show connection details.</li>
-          <li>Wi-Fi information &mdash; to display the connected network&rsquo;s name, band and channel. On Android 8&ndash;12, Android itself requires Location permission to expose the Wi-Fi name; on Android 13+ the Nearby devices permission is used instead. Your physical location is never determined, stored, or shared.</li>
-          <li>Notifications (Android 13+) &mdash; to report download progress and results only.</li>
+          <li>Internet, Wi-Fi state and network state &mdash; to load your router&rsquo;s admin page and show connection and signal details.</li>
+          <li>Change network state &mdash; to hold your router&rsquo;s Wi-Fi network active while mobile data is switched on, so the admin page stays reachable. This does not change any setting on your router.</li>
+          <li>Location &mdash; required by Android, not by us: the system releases the connected network&rsquo;s name (SSID) and router MAC (BSSID) only to an app that holds Location permission, and only while Location is switched on. The App asks for it solely to read the Wi-Fi details shown on the Wi-Fi tab; it never asks for your coordinates, never calls a location API, derives no position from Wi-Fi information, and stores or sends nothing off your device. A note on that tab explains this whenever the permission or the Location switch is missing.</li>
+          <li>Notifications (Android 13 and higher) &mdash; to show download progress and results.</li>
           <li>Storage (Android 9 and below) &mdash; to save files you download from your router.</li>
         </ul>
-        <p class="section-content">Files you choose to download from your router (configuration backups, firmware, logs) are saved to your device&rsquo;s Downloads folder and never leave your device. Standard web technologies such as cookies and cache may be stored locally on your device to keep you signed in and improve browsing performance. All such data remains on your device and can be cleared at any time using the "Clear History" feature within the App.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="2.5" width="6" height="5" rx="1.4"/>
+          <path d="M12 7.5V11M5 16v-1a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1"/>
+          <rect x="3" y="16" width="4" height="4.5" rx="1.2"/>
+          <rect x="17" y="16" width="4" height="4.5" rx="1.2"/>
+        </svg>
+      </div>
+      <div class="section-body">
+        <h2 class="section-title">Local Network Access</h2>
+        <p class="section-content">Talking to devices on your own local network is the core of what this App does, and it never leaves that network unless you ask it to.</p>
+        <p class="section-content" style="margin-top:12px;">When the App opens it looks for the gateway address of the network you are on and loads your router&rsquo;s admin page; if that address does not answer, it tries other common gateway addresses on the same subnet. It also reads Wi-Fi details and shows them to you: the connected network name, the router&rsquo;s MAC address (BSSID), signal and frequency information, and the Wi-Fi MAC address Android reports for your own device. All of it is displayed on your device only and is never sent to us.</p>
+        <p class="section-content" style="margin-top:12px;">Discovery is limited to addresses on the subnet your device is already joined to. The App does not scan other networks or the internet, and it does not build a picture of your home network.</p>
+        <p class="section-content" style="margin-top:12px;">The Ping Test feature, which only runs when you start it from the Settings tab, sends standard ping requests to the hosts you choose &mdash; by default public DNS resolvers such as 8.8.8.8 and 1.1.1.1 &mdash; to measure latency. Those hosts see the connection from your device under their own privacy policies.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
+          <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/>
+          <path d="M1 1l22 22"/>
+          <path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"/>
+        </svg>
+      </div>
+      <div class="section-body">
+        <h2 class="section-title">No Tracking, Ads or Analytics</h2>
+        <p class="section-content">We do not run analytics, advertising, attribution or crash-reporting services, and we cannot see how you use the App. The App contains no advertising or analytics SDK, shows no ads, and performs no behavioural targeting. No advertising identifier is read or stored.</p>
       </div>
     </div>
 
@@ -216,8 +255,10 @@
         </svg>
       </div>
       <div class="section-body">
-        <h2 class="section-title">Third-Party Websites</h2>
-        <p class="section-content">The App provides links to third-party websites, including router admin panels, which are not operated by us. We are not responsible for the privacy practices, content, or security of these external sites. We encourage you to review the privacy policy of any third-party website you access.</p>
+        <h2 class="section-title">Third-Party Sites and Services</h2>
+        <p class="section-content">The App loads pages from sites that you and your router&rsquo;s web interface control, including router admin panels, which are not operated by us. We are not responsible for their content, security or privacy practices, so please review their own policies.</p>
+        <p class="section-content" style="margin-top:12px;">The App includes one Google-provided component: the Play in-app update library, which asks Google Play whether a newer version of the App is available and lets Google Play carry out the update. That check is handled by Google Play on your device, and it concerns the App and your device only &mdash; the App sends Google nothing about you, your router or the pages you browse. Google&rsquo;s handling of that check is governed by Google&rsquo;s Privacy Policy.</p>
+        <p class="section-content" style="margin-top:12px;">If you use &ldquo;Open in Browser&rdquo;, the page is handed to your default browser, and from that point on that browser&rsquo;s own privacy policy applies instead of this one.</p>
       </div>
     </div>
 
@@ -230,7 +271,9 @@
       </div>
       <div class="section-body">
         <h2 class="section-title">Data Security</h2>
-        <p class="section-content">Because the App does not collect or transmit any personal data to our servers, there is no user data to secure on our end. Any information you enter (such as login credentials) is processed directly by the respective third-party websites over their own secure connections and is never stored or accessed by this App.</p>
+        <p class="section-content">Because no information about you is collected or transmitted to us, we hold no user data and have nothing to secure on our side. There is no developer-operated server anywhere in the App&rsquo;s design.</p>
+        <p class="section-content" style="margin-top:12px;">Anything you type into the pages you open &mdash; including your router&rsquo;s username and password &mdash; is sent by Android&rsquo;s WebView straight to that site over the connection the site itself uses. It is handled by that site alone and is never read, logged or stored by the App. A saved router login is kept in Android&rsquo;s WebView credential store on your device, and is deleted by &ldquo;Clear History&rdquo;.</p>
+        <p class="section-content" style="margin-top:12px;">Files you download from your router are transferred with certificate validation enabled, are written straight to your device, and are never uploaded anywhere by us. If you restore a router backup you have selected yourself, it is handed to the page you chose and handled there.</p>
       </div>
     </div>
 
@@ -243,7 +286,28 @@
       </div>
       <div class="section-body">
         <h2 class="section-title">Children's Privacy</h2>
-        <p class="section-content">The App is not directed at children under the age of 13, and we do not knowingly collect any personal information from children. If you believe a child has provided us with personal information, please contact us so that we can address the matter.</p>
+        <p class="section-content">The App is a network utility for adults and is not directed at children under 13. We do not knowingly collect personal information from children &mdash; and because we collect nothing from anyone at all, we hold no information about children. If you believe a child has shared personal information with us, contact us and we will help.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 7h16"/>
+          <path d="M10 11v6M14 11v6"/>
+          <path d="M6 7l1 12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-12"/>
+          <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/>
+        </svg>
+      </div>
+      <div class="section-body">
+        <h2 class="section-title">Your Choices and Controls</h2>
+        <p class="section-content">Everything the App stores stays under your control:</p>
+        <ul class="section-list">
+          <li>Erase browsing data at any time with &ldquo;Clear History&rdquo; in the App menu.</li>
+          <li>Revoke any permission from Android Settings &rarr; Apps &rarr; Router Page Setup &rarr; Permissions. Features that depend on a permission will stop working; the rest of the App keeps running.</li>
+          <li>Clear the App&rsquo;s data, or uninstall it, to remove everything it has stored.</li>
+        </ul>
+        <p class="section-content">We hold no server-side information, so there is nothing for us to export, correct or delete on request. If you contact us asking us to delete your information, we will confirm that we never received it in the first place.</p>
       </div>
     </div>
 
@@ -256,7 +320,7 @@
       </div>
       <div class="section-body">
         <h2 class="section-title">Changes to This Policy</h2>
-        <p class="section-content">We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the "Last updated" date at the top will be revised accordingly. We encourage you to review this policy periodically to stay informed about how we protect your privacy.</p>
+        <p class="section-content">We may update this Privacy Policy from time to time. A change takes effect when the updated version of the App is published on Google Play, and the &ldquo;Last updated&rdquo; date at the top of this page is revised at the same time. Significant changes are listed in the release notes of that version.</p>
       </div>
     </div>
 
@@ -268,7 +332,7 @@
       </div>
       <div class="section-body">
         <h2 class="section-title">Contact Us</h2>
-        <p class="section-content">If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+        <p class="section-content">If you have any questions or concerns about this Privacy Policy, please contact us. We read every message and aim to reply within 30 days:</p>
         <p class="section-content">
           App Name: <a href="https://play.google.com/store/apps/details?id=com.routerpagesetup" target="_blank" rel="noopener">Router Page Setup</a><br />
           Developer: <a href="https://play.google.com/store/apps/dev?id=5574132061091657048" target="_blank" rel="noopener">Sajedur0</a><br />
